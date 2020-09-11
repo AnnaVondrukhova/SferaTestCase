@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +14,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github_logo" translatesAutoresizingMaskIntoConstraints="NO" id="oAG-Ll-PUT">
+                                <rect key="frame" x="62.5" y="298.5" width="250" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="21U-Ms-WMg"/>
+                                    <constraint firstAttribute="height" constant="140" id="Xz1-64-89g"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github_mark" translatesAutoresizingMaskIntoConstraints="NO" id="Jlf-Vj-WeU">
+                                <rect key="frame" x="127.5" y="128.5" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="0Id-zl-KZq"/>
+                                    <constraint firstAttribute="width" secondItem="Jlf-Vj-WeU" secondAttribute="height" multiplier="1:1" id="EVj-jR-OXi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jlf-Vj-WeU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0O9-lT-Rtx"/>
+                            <constraint firstItem="oAG-Ll-PUT" firstAttribute="top" secondItem="Jlf-Vj-WeU" secondAttribute="bottom" constant="50" id="Sn2-eq-LIZ"/>
+                            <constraint firstItem="oAG-Ll-PUT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Yd5-6t-vAF"/>
+                            <constraint firstItem="oAG-Ll-PUT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="35" id="jIl-Gq-Veo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +45,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="github_logo" width="864" height="462"/>
+        <image name="github_mark" width="512" height="512"/>
+    </resources>
 </document>
