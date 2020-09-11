@@ -2,12 +2,13 @@
 //  SceneDelegate.swift
 //  SferaTestCase
 //
-//  Created by Anya on 07.09.2020.
+//  Created by Anya on 11.09.2020.
 //  Copyright © 2020 Anna Vondrukhova. All rights reserved.
 //
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -50,4 +51,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-

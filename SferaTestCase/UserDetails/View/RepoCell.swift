@@ -30,7 +30,7 @@ class RepoCell: UITableViewCell {
     func configureFolded(with repo: Repo) {
         nameLabel.text = repo.name
         languageLabel.text = repo.language
-        foldButtonImage.image = UIImage(systemName: "arrow.left.circle")
+        foldButtonImage.image = UIImage(named: "arrow.left.circle")
         starImage.isHidden = true
         starLabel.isHidden = true
         updatedLabel.isHidden = true
@@ -39,14 +39,12 @@ class RepoCell: UITableViewCell {
     func configureUnfolded(with repo: Repo) {
         nameLabel.text = repo.name
         languageLabel.text = repo.language
-        foldButtonImage.image = UIImage(systemName: "arrow.down.circle")
+        foldButtonImage.image = UIImage(named: "arrow.down.circle")
         starLabel.text = "\(repo.stars)"
         if repo.stars == 0 {
-            starImage.image = UIImage(systemName: "star")
-            starImage.tintColor = .darkGray
+            starImage.image = UIImage(named: "star")
         } else {
-            starImage.image = UIImage(systemName: "star.fill")
-            starImage.tintColor = .systemYellow
+            starImage.image = UIImage(named: "starfill")
         }
         updatedLabel.text = "Updated \(repo.updatedAt)"
         

@@ -60,7 +60,7 @@ class UserListViewController: UIViewController, UISearchBarDelegate {
         
         if !isAuthorized {
             let storyboard = UIStoryboard(name: "Main", bundle: .main)
-            let vc = storyboard.instantiateViewController(identifier: "loginViewController")
+            let vc = storyboard.instantiateViewController(withIdentifier: "loginViewController")
             vc.modalPresentationStyle = .overCurrentContext
             vc.modalTransitionStyle = .crossDissolve
             

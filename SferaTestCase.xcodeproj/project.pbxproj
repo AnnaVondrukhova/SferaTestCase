@@ -27,8 +27,8 @@
 		C1CD1DA2250B49F200568705 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD1DA1250B49F200568705 /* LoginViewController.swift */; };
 		C1CD1DA4250B4A0500568705 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CD1DA3250B4A0500568705 /* LoginView.xib */; };
 		C1CD1DA6250B56FA00568705 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD1DA5250B56FA00568705 /* LoginView.swift */; };
+		C1CD1DA8250BDAB300568705 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD1DA7250BDAB300568705 /* SceneDelegate.swift */; };
 		C1F32C8E2506763300D391C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F32C8D2506763300D391C8 /* AppDelegate.swift */; };
-		C1F32C902506763300D391C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F32C8F2506763300D391C8 /* SceneDelegate.swift */; };
 		C1F32C922506763300D391C8 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F32C912506763300D391C8 /* UserListViewController.swift */; };
 		C1F32C952506763300D391C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F32C932506763300D391C8 /* Main.storyboard */; };
 		C1F32C972506763700D391C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F32C962506763700D391C8 /* Assets.xcassets */; };
@@ -58,9 +58,9 @@
 		C1CD1DA1250B49F200568705 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1CD1DA3250B4A0500568705 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		C1CD1DA5250B56FA00568705 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C1CD1DA7250BDAB300568705 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C1F32C8A2506763300D391C8 /* SferaTestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SferaTestCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F32C8D2506763300D391C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1F32C8F2506763300D391C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C1F32C912506763300D391C8 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		C1F32C942506763300D391C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1F32C962506763700D391C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				C1F32C8D2506763300D391C8 /* AppDelegate.swift */,
-				C1F32C8F2506763300D391C8 /* SceneDelegate.swift */,
+				C1CD1DA7250BDAB300568705 /* SceneDelegate.swift */,
 				C1CD1DA1250B49F200568705 /* LoginViewController.swift */,
 			);
 			path = Controller;
@@ -378,7 +378,7 @@
 				C1CD1D99250A162D00568705 /* Repo.swift in Sources */,
 				C1CD1D7625077ADB00568705 /* User.swift in Sources */,
 				C1CD1D9B250A1B8F00568705 /* RepoService.swift in Sources */,
-				C1F32C902506763300D391C8 /* SceneDelegate.swift in Sources */,
+				C1CD1DA8250BDAB300568705 /* SceneDelegate.swift in Sources */,
 				C1CD1DA6250B56FA00568705 /* LoginView.swift in Sources */,
 				C1CD1D9325094EF900568705 /* UserDetailsService.swift in Sources */,
 				C1CD1DA2250B49F200568705 /* LoginViewController.swift in Sources */,
@@ -460,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -514,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -532,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV8EDW43XJ;
 				INFOPLIST_FILE = SferaTestCase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,7 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aav.SferaTestCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -551,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV8EDW43XJ;
 				INFOPLIST_FILE = SferaTestCase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,7 +560,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aav.SferaTestCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

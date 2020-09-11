@@ -50,7 +50,7 @@ class NetworkService {
             }
             
             print("Status code: ", response.statusCode)
-            if let value = response.value(forHTTPHeaderField: "Link") {
+            if let value = response.allHeaderFields["Link"] as? String {
                 self.nextPageExist = value.contains("rel=\"next\"")
             }
             completion(data, response.statusCode)
