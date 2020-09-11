@@ -35,6 +35,8 @@ class LoginView: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.layer.cornerRadius = 10.0
+        contentView.layer.borderWidth = 3.0
+        contentView.layer.borderColor = UIColor.white.cgColor
         loginButton.layer.cornerRadius = 5.0
     }
     

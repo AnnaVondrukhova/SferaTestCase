@@ -30,6 +30,8 @@ class UserService {
                     message = "No internet connection"
                 case 403:
                     message = "Exceeded limit of search reguests per minute"
+                case 422:
+                    message = "Wrong search request"
                 default:
                     message = "Server is not responding"
                 }
